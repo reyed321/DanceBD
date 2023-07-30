@@ -1,4 +1,4 @@
-package com.example.dancebd;
+package com.example.dancebd.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,9 @@ import android.widget.ProgressBar;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Handler;
-import androidx.appcompat.app.AppCompatActivity;
-import android.widget.ProgressBar;
+
+import com.example.dancebd.MainActivity;
+import com.example.dancebd.R;
 
 public class SplashActive extends AppCompatActivity {
     ProgressBar splashProgress;
@@ -26,8 +27,8 @@ public class SplashActive extends AppCompatActivity {
             @Override
             public void run() {
                 //Do any action here. Now we are moving to next page
-              // Intent mySuperIntent = new Intent(SplashActive.this, ActivityHome.class);
-              //  startActivity(mySuperIntent);
+                Intent mySuperIntent = new Intent(SplashActive.this,  MainActivity.class);
+                startActivity(mySuperIntent);
 
                 //This 'finish()' is for exiting the app when back button pressed from Home page which is ActivityHome
                 finish();
