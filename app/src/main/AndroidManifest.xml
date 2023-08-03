@@ -12,10 +12,10 @@
         android:theme="@style/Theme.DanceBD"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActive"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activity.SplashActive"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
