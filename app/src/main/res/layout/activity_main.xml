@@ -24,7 +24,7 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:id="@+id/bottomNavigationView"
-             android:layout_margin="20dp"
+             android:layout_margin="30dp"
              app:labelVisibilityMode="labeled"
              android:background="@android:color/transparent"
              app:menu="@menu/item_menu"/>
@@ -38,6 +38,7 @@
         android:src="@drawable/ic_circle"
         app:layout_anchor="@id/bottomAppBar"
         app:maxImageSize="40dp"
-        android:tint="@color/lavender"  />
+        android:tint="@color/lavender"
+        android:contentDescription="TODO" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
