@@ -6,17 +6,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView profileName, profileEmail, profileUsername, profilePassword;
+    TextView titleName, titleUsername;
+    Button editProfile;
     BottomNavigationView bottom_nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         bottom_nav = findViewById(R.id.bottomNavigationView);
 
